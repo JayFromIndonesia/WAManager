@@ -23,12 +23,15 @@ $WAManager = new WAManager(
     "YOUR_API_SECRET",
     "WHATSAPP_ACCOUNT_UNIQUE_ID"
 );
-
+```
 1️⃣ **Mengirim Pesan TEXT**
+```php
 $WAManager->sendText("+6281234567890", "Hello dunia!");
+```
 
-2️⃣ © 2025 WAManager – Raditek Indonesia
+2️⃣ **Mengirim Pesan MEDIA** (image / audio / video)
 **A. Menggunakan URL**
+```php
 $WAManager->sendMedia(
     "+6281234567890",
     "Ini gambarnya",
@@ -36,7 +39,9 @@ $WAManager->sendMedia(
     "https://domain.com/foto.jpg",
     "image"
 );
+```
 **B. Menggunakan File Lokal (Upload)**
+```php
 $WAManager->sendMedia(
     "+6281234567890",
     "Foto terlampir",
@@ -44,9 +49,11 @@ $WAManager->sendMedia(
     "uploads/foto.jpg",
     "image"
 );
+```
 
-3️⃣ **Mengirim Pesan DOKUMEN (pdf / xls / xlsx / doc / docx)**
+3️⃣ **Mengirim Pesan DOKUMEN** (pdf / xls / xlsx / doc / docx)
 **A. Menggunakan URL**
+```php
 $WAManager->sendDocument(
     "+6281234567890",
     "Dokumen terlampir",
@@ -55,7 +62,9 @@ $WAManager->sendDocument(
     "laporan.pdf",
     "pdf"
 );
+```
 **B. Menggunakan File Lokal (Upload)**
+```php
 $WAManager->sendDocument(
     "+6281234567890",
     "Dokumen ada di file",
@@ -64,6 +73,7 @@ $WAManager->sendDocument(
     "laporan.xlsx",
     "xlsx"
 );
+```
 
 📌 **Catatan Tambahan**
 - API otomatis memvalidasi nomor WhatsApp sebelum pengiriman.
