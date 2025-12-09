@@ -30,6 +30,7 @@ $WAManager->sendText("+6281234567890", "Hello dunia!");
 ```
 
 2️⃣ **Mengirim Pesan MEDIA** (image / audio / video)
+
 **A. Menggunakan URL**
 ```php
 $WAManager->sendMedia(
@@ -52,6 +53,7 @@ $WAManager->sendMedia(
 ```
 
 3️⃣ **Mengirim Pesan DOKUMEN** (pdf / xls / xlsx / doc / docx)
+
 **A. Menggunakan URL**
 ```php
 $WAManager->sendDocument(
@@ -82,7 +84,9 @@ $WAManager->sendDocument(
 - Semua request dikirim melalui endpoint https://wa.raditek.co.id/api/
 
 📚 **Dokumentasi Resmi**
+
 Dokumentasi lengkap tersedia di:
+
 👉 https://wa.raditek.co.id/dashboard/docs
 
 🎯 **Keunggulan WAManager**
@@ -92,7 +96,10 @@ Dokumentasi lengkap tersedia di:
 - Integrasi mudah ke sistem toko, PPOB, ERP, bot, dan aplikasi bisnis
 
 💬 **Bantuan & Support**
+
 Jika membutuhkan bantuan integrasi atau debugging API:
+
 📞 WhatsApp: (+62) 83-8001-80555
+
 
 **© 2025 WAManager – RADITEK GROUP**
