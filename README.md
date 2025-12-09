@@ -1,20 +1,19 @@
 
-/* 
+
 |--------------------------------------------------------------------------
-| CARA PENGGUNAAN API WAManager
+| **CARA PENGGUNAAN API WAMANAGER**
 | Whatsapp: (+62) 83-8001-80555
 | Website: https://wa.raditek.co.id
 | Untuk cara penggunaan selengkapnya bisa cek di tautan berikut:
 | https://wa.raditek.co.id/dashboard/docs
 |--------------------------------------------------------------------------
-*/
 
-/*
-Contoh penggunaan fitur pengiriman pesan:
+
+
+**Contoh penggunaan fitur pengiriman pesan:**
 - Text Message
 - Media Message (image, audio, video)
 - Document Message (pdf, xls, xlsx, doc, docx)
-*/
 
 $WAManager = new WAManager(
     "YOUR_API_SECRET",
@@ -24,25 +23,25 @@ $WAManager = new WAManager(
 
 
 
-/* 
+
 |--------------------------------------------------------------------------
-| 1) KIRIM PESAN TEXT
+| **1) KIRIM PESAN TEXT**
 |---------------------------------------------------------------------------
-*/
+
 $WAManager->sendText("+6281234567890", "Hello dunia!");
 
 
 
 
-/* 
-|--------------------------------------------------------------------------
-| 2) KIRIM PESAN MEDIA (image / video / audio)
-|---------------------------------------------------------------------------
-*/
 
-/*
-| A. Menggunakan URL langsung:
-*/
+|--------------------------------------------------------------------------
+| **2) KIRIM PESAN MEDIA (image / video / audio)**
+|---------------------------------------------------------------------------
+
+
+
+**| A. Menggunakan URL langsung:**
+
 $WAManager->sendMedia(
     "+6281234567890",
     "Ini gambarnya",
@@ -51,9 +50,9 @@ $WAManager->sendMedia(
     "image"
 );
 
-/*
-| B. Menggunakan file lokal (upload):
-*/
+
+**| B. Menggunakan file lokal (upload):**
+
 $WAManager->sendMedia(
     "+6281234567890",
     "Foto terlampir",
@@ -65,14 +64,15 @@ $WAManager->sendMedia(
 
 
 
-/* --------------------------------------------------------------------------
-| 3) KIRIM PESAN DOKUMEN (pdf / xls / xlsx / doc / docx)
-|---------------------------------------------------------------------------
-*/
 
-/*
-| A. Menggunakan URL:
-*/
+|--------------------------------------------------------------------------
+| **3) KIRIM PESAN DOKUMEN (pdf / xls / xlsx / doc / docx)**
+|---------------------------------------------------------------------------
+
+
+
+**| A. Menggunakan URL:**
+
 $WAManager->sendDocument(
     "+6281234567890",
     "Dokumen terlampir",
@@ -82,9 +82,9 @@ $WAManager->sendDocument(
     "pdf"
 );
 
-/*
-| B. Menggunakan file lokal (upload):
-*/
+
+**| B. Menggunakan file lokal (upload):**
+
 $WAManager->sendDocument(
     "+6281234567890",
     "Dokumen ada di file",
